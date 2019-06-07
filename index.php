@@ -26,5 +26,5 @@ if($msg == "/start") {
 sm($chatID, "Ehi ehi");
 }
 
-if($msg =="ciao") {
-	sm($chatID,"ciao ciao");}
+if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
+	sm($chatID,"Ciao!");}
