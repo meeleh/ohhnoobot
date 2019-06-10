@@ -32,3 +32,7 @@ if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == 
 if($msg == "/si") {
 sm($chatID, "No");
 }
+
+if($msg == "/start") {
+sm($chatID, "ciao");
+}
