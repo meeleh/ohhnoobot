@@ -49,7 +49,7 @@ if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == 
 	$out = sm($chatID,"Ciao!");}
 
 if($msg == "No") {
-$out = replymsg($chatID, "Sì");
+$out = replymsg($chatID, $messageID, "Sì");
 }
 
 if($msg == "/start") {
