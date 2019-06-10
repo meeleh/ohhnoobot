@@ -11,9 +11,7 @@ $update = json_decode($content, true);
 //Variabili
 $msg = $update["message"]["text"];
 $chatID = $update["message"]["chat"]["id"];
-$messageID = $update["message"]["id"];
-
-
+$user_id = $update["message"]["from"]["id"];
 
 //Funzioni
 
@@ -23,14 +21,13 @@ function saveInJsonFile($data, $filename){
     file_put_contents($filename,json_encode($data,JSON_PRETTY_PRINT));
 }
 
-function sm($chatID, $text) {
+function sm($chatID, $text, $reply) {
 global $api;
-$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text);  
+if($reply != NULL) {
+	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message='.$reply)
 }
-
-function replymsg($chatID, $messageID, $text,) {
-global $api;
-$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id=',$messageID.);  
+else 
+$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text);  
 }
 ///////////////////////////////////////////////////////////////////////////
 
@@ -46,10 +43,10 @@ $out = sm($chatID, "Ehi ehi");
 }
 
 if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
-	$out = sm($chatID,"Ciao!");}
+	$out = sm($chatID,"Ciao!", $user_id;}
 
 if($msg == "No") {
-$out = replymsg($chatID, $messageID, "Sì");
+$out = sm($chatID, "Sì");
 }
 
 if($msg == "/start") {
