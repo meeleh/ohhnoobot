@@ -22,7 +22,7 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 if($msg == "/start") {
-sm($chatID, "Ehi ehi",$user_id);
+sm($chatID, "Ehi ehi","");
 }
 if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
 	sm($chatID,"Ciao!",$user_id);}
