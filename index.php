@@ -38,7 +38,7 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 saveInJsonFile($update, "ricevuto.json");
 
 if($msg == "/acul") {
-$out=sm($chatID, "Ehi ehi");
+$out = sm($chatID, "Ehi ehi");
 }
 
 if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
