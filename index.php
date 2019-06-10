@@ -30,7 +30,7 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 
 function replymsg($chatID, $messageID, $text,) {
 global $api;
-$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message=',$messageID.);  
+$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id=',$messageID.);  
 }
 ///////////////////////////////////////////////////////////////////////////
 
