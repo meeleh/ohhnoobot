@@ -42,14 +42,14 @@ $out = sm($chatID, "Ehi ehi");
 }
 
 if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
-	sm($chatID,"Ciao!");}
+	$out = sm($chatID,"Ciao!");}
 
 if($msg == "/si") {
-sm($chatID, "No");
+$out = sm($chatID, "No");
 }
 
 if($msg == "/start") {
-sm($chatID, "ciao");
+$out = sm($chatID, "ciao");
 }
 
 
