@@ -9,7 +9,7 @@ $update = json_decode($content, true);
 //Variabili
 $msg = $update["message"]["text"];
 $chatID = $update["message"]["chat"]["id"];
-$user_id = $update["message"]["id"];
+$user_id = $update["message"]["message_id"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
