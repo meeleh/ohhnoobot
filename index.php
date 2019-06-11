@@ -28,7 +28,7 @@ if(array_key_exists("text", $msg)){
     if($text == "/start") 
         sm($chatID, "Ehi ehi", NULL);
     
-    if($text =="ciao" or $msg == "ehi") 
+    if($text =="ciao" or $text == "ehi") 
         sm($chatID,"Ciao!", $user_id);
 }
 
