@@ -21,10 +21,18 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 }
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
-if($msg == "/start") {
-sm($chatID, "Ehi ehi", NULL);
+if(in_array("text", $msg)){
+    $text = $msg["text"]
+
+    if($text == "/start") 
+        sm($chatID, "Ehi ehi", NULL);
+    
+    if($text =="ciao" or $msg == "ehi") 
+        sm($chatID,"Ciao!", $user_id);
 }
-if($msg =="ciao" or $msg == "ehi" or $msg == "Ciao" or $msg == "Ehi" or $msg == "Hey") {
-	sm($chatID,"Ciao!",$user_id);}
+
+if(in_array("photo", $msg)){
+}
+
 
 ?>
