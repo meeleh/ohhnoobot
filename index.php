@@ -21,6 +21,9 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 }
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
+
+saveInJsonFile($update, "ricevuto.json"); 
+
 if(array_key_exists("text", $msg)){
     $text = $update["message"]["text"];
 
