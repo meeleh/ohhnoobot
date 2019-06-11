@@ -7,7 +7,7 @@ $update = json_decode($content, true);
 /////////////////////////////////////////////
 ///////////////////// Parte da api.telegram.org //////////////////////////
 //Variabili
-$msg = $update["message"]["text"];
+$text = $update["message"]["text"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
 //Funzioni
@@ -21,8 +21,8 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 }
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
-if(in_array("text", $msg)){
-    $text = $msg["text"];
+if(in_array("text", $text)){
+    $text = $text["text"];
 
     if($text == "/start") 
         sm($chatID, "Ehi ehi", NULL);
