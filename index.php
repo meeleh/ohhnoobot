@@ -8,7 +8,6 @@ $update = json_decode($content, true);
 ///////////////////// Parte da api.telegram.org //////////////////////////
 //Variabili
 $msg = $update["message"];
-$text = $update["message"]["text"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
 //Funzioni
