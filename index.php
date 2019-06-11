@@ -32,8 +32,9 @@ if(array_key_exists("text", $msg)){
         sm($chatID,"Ciao!", $user_id);
 }
 
-//if(in_array("photo", $msg)){
-//}
+
+if(array_key_exists("photo", $msg)){
+}
 
 
 ?>
