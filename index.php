@@ -31,8 +31,8 @@ if($msg["text]){
         sm($chatID,"Ciao!", $user_id);
 }
 
-if(in_array("photo", $msg)){
-}
+//if(in_array("photo", $msg)){
+//}
 
 
 ?>
