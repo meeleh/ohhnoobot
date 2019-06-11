@@ -22,8 +22,8 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 }
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
-if(array_key_exists("text", $text)){
-    $text = $msg["text"];
+if(array_key_exists("text", $msg)){
+    $text = $update["message"]["text"];
 
     if($text == "/start") 
         sm($chatID, "Ehi ehi", NULL);
