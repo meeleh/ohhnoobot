@@ -15,14 +15,10 @@ function sm($chatID, $text, $reply) {
 global $api;
 
 if($reply != NULL) {
-	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id='.$reply);
-	$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
+	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id='.$reply);	
 }
 else {
-	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text); 
-	$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
-	
-}
+	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text); }
 }
 
 
@@ -31,7 +27,8 @@ else {
 
 if(array_key_exists("text", $msg)){
     $text = $update["message"]["text"];
-   
+    $dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
+
     if($text == "/start") 
        $out = sm($chatID, "Ehi ehi", NULL);
 	
@@ -44,17 +41,5 @@ if(array_key_exists("photo", $msg)){
 }
 
 
-//$file = fopen("ricevuto.json","a");
-//echo fwrite($file,json_encode($update,JSON_PRETTY_PRINT));
-//fclose($file);
-
-
-//$file = "inviato.json";
-
-//$fp = fopen($file, "a");
-
-//file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
-
-//fclose($fp);
 
 ?>
