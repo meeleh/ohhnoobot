@@ -38,7 +38,7 @@ if(array_key_exists("text", $msg)){
 if(array_key_exists("photo", $msg)){
 }
 
-$file = "./inviati.txt";
+$file = "/inviati.txt";
 
 $fp = fopen($file, "a");
 
