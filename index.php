@@ -48,7 +48,7 @@ $file = "inviato.json";
 
 $fp = fopen($file, "a");
 
-fputs($fp, json_encode($update,JSON_PRETTY_PRINT)."\r\n");
+file_put_contents($filename,json_encode($data,JSON_PRETTY_PRINT));
 
 fclose($fp);
 
