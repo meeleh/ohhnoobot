@@ -49,7 +49,7 @@ $file = "inviato.json";
 
 //$fp = fopen($file, "a");
 
-file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT));
+file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
 //fclose($fp);
 
