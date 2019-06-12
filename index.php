@@ -38,12 +38,10 @@ if(array_key_exists("text", $msg)){
 if(array_key_exists("photo", $msg)){
 }
 
-$file = "/inviati.txt";
 
-$fp = fopen($file, "a");
+$file = fopen("inviati.txt","w");
+echo fwrite($file,"Hello World. Testing!");
+fclose($file);
 
-fputs($fp, $out. "\r\n");
-
-fclose($fp);
 
 ?>
