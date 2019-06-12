@@ -39,9 +39,17 @@ if(array_key_exists("photo", $msg)){
 }
 
 
-$file = fopen("ricevuto.json","a");
-echo fwrite($file,json_encode($update,JSON_PRETTY_PRINT));
-fclose($file);
+//$file = fopen("ricevuto.json","a");
+//echo fwrite($file,json_encode($update,JSON_PRETTY_PRINT));
+//fclose($file);
 
+
+$file = "inviati.json";
+
+$fp = fopen($file, "a");
+
+fputs($fp, $update."\r\n");
+
+fclose($fp);
 
 ?>
