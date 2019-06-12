@@ -44,7 +44,7 @@ if(array_key_exists("photo", $msg)){
 //fclose($file);
 
 
-$file = "inviati.json";
+$file = "inviato.json";
 
 $fp = fopen($file, "a");
 
