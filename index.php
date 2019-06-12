@@ -30,6 +30,7 @@ if(array_key_exists("text", $msg)){
 
     if($text == "/start") 
        $out = sm($chatID, "Ehi ehi", NULL);
+	$datiout = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($out,JSON_PRETTY_PRINT)); 
     
     if($text =="ciao" or $text == "ehi") 
        $out = sm($chatID,"Ciao!", $user_id);
@@ -45,11 +46,11 @@ if(array_key_exists("photo", $msg)){
 //fclose($file);
 
 
-$file = "inviato.json";
+//$file = "inviato.json";
 
 //$fp = fopen($file, "a");
 
-file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+//file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
 //fclose($fp);
 
