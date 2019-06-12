@@ -20,15 +20,9 @@ else {
 $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text);  }
 }
 
-function saveInJsonFile($data, $filename){
-    if(file_exists($filename))
-        unlink($filename);
-    file_put_contents($filename,json_encode($data,JSON_PRETTY_PRINT));
-}
+
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
-
-saveInJsonFile($update, "ricevuto.json"); 
 
 if(array_key_exists("text", $msg)){
     $text = $update["message"]["text"];
@@ -44,6 +38,12 @@ if(array_key_exists("text", $msg)){
 if(array_key_exists("photo", $msg)){
 }
 
-saveInJsonFile($out, "inviato.json");
+$file = "./inviati.txt";
+
+$fp = fopen($file, "a");
+
+fputs($fp, $out. "\r\n");
+
+fclose($fp);
 
 ?>
