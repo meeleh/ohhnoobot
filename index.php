@@ -39,7 +39,7 @@ if(array_key_exists("photo", $msg)){
 }
 
 
-$file = fopen("inviati.txt","w");
+$file = fopen("inviati.txt","a");
 echo fwrite($file,"Hello World. Testing!");
 fclose($file);
 
