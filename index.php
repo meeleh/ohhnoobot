@@ -13,6 +13,8 @@ $user_id = $update["message"]["message_id"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
+$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
+	
 if($reply != NULL) {
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id='.$reply);
 }
@@ -26,12 +28,10 @@ $r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.
 
 if(array_key_exists("text", $msg)){
     $text = $update["message"]["text"];
-    $dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
-
+   
     if($text == "/start") 
        $out = sm($chatID, "Ehi ehi", NULL);
-	$datiout = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($out,JSON_PRETTY_PRINT)); 
-    
+	
     if($text =="ciao" or $text == "ehi") 
        $out = sm($chatID,"Ciao!", $user_id);
 }
