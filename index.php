@@ -40,7 +40,7 @@ if(array_key_exists("photo", $msg)){
 
 
 $file = fopen("ricevuto.json","a");
-echo fwrite($file,json_encode($out,JSON_PRETTY_PRINT));
+echo fwrite($file,json_encode($update,JSON_PRETTY_PRINT));
 fclose($file);
 
 
