@@ -30,7 +30,6 @@ if(array_key_exists("text", $msg)){
     
 
     if($text == "/start") 
-	$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
        $out = sm($chatID, "Ehi ehi", NULL);
 	
     if($text =="ciao" or $text == "ehi") 
