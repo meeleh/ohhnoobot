@@ -46,10 +46,10 @@ if(array_key_exists("photo", $msg)){
 
 $file = "inviato.json";
 
-$fp = fopen($file, "a");
+//$fp = fopen($file, "a");
 
 file_put_contents($file,json_encode($update,JSON_PRETTY_PRINT));
 
-fclose($fp);
+//fclose($fp);
 
 ?>
