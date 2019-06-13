@@ -46,7 +46,7 @@ if(array_key_exists("text", $msg)){
        $out = sm($chatID,"Ciao!", $user_id);  }
 	
     if($text == "foto"){
-	$photo = 'AgADBAADJrAxG3u7CFDD4nw-x4m6_UYVIhsABHR-peoVil9y30AGAAEC';
+	$photo = 'AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC';
 	$out = sf($chatID, $photo , NULL);}
    
     if ($text == "gatto") {
