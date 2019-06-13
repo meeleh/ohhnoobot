@@ -40,7 +40,7 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
-	$out = sm($chatID, "Ehi ehi", NULL); 
+	$out = sm($chatID, "Ehi ehi", NULL); }
 	
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao!", $user_id);  }
