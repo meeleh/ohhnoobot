@@ -47,7 +47,9 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") 
-       $out = sm($chatID, "Ehi ehi", NULL); 
+       sendphoto($chatID,'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg', "Questa è una foto");
+	
+	    //$out = sm($chatID, "Ehi ehi", NULL); 
 	
     if($text =="ciao" or $text == "ehi") 
        $out = sm($chatID,"Ciao!", $user_id);
