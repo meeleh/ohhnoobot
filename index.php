@@ -44,18 +44,20 @@ if(array_key_exists("text", $msg)){
 	$out = sf($chatID, $photo, NULL);}
 	    //$out = sm($chatID, "Ehi ehi", NULL); 
 	
-    elseif($text =="ciao" or $text == "ehi") { 
+    if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao!", $user_id);  }
 	
-    elseif($text == "Foto"){
+    if($text == "foto"){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
    
-    elseif ($text == "gatto") {
+    if ($text == "gatto") {
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
-   
-
+	
+   if($text == "moto"){
+	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
+	$out = sf($chatID, $photo, NULL);}
 	
 }
 
