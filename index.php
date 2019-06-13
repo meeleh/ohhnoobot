@@ -50,6 +50,11 @@ if(array_key_exists("text", $msg)){
     elseif($text == "Foto"){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
+   
+    elseif ($text == "gatto") {
+	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
+	$out = sf($chatID, $photo, NULL);}
+   
 
 	
 }
