@@ -47,7 +47,7 @@ if(array_key_exists("text", $msg)){
 	
     if($text == "foto"){
 	//$photo = 'AgADBAADJrAxG3u7CFDD4nw-x4m6_UYVIhsABHR-peoVil9y30AGAAEC';
-	$out = sf($chatID,AgADBAADJrAxG3u7CFDD4nw-x4m6_UYVIhsABHR-peoVil9y30AGAAEC, NULL);}
+	$out = sf($chatID, 'AgADBAADJrAxG3u7CFDD4nw-x4m6_UYVIhsABHR-peoVil9y30AGAAEC' , NULL);}
    
     if ($text == "gatto") {
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
