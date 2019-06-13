@@ -28,6 +28,7 @@ else {
 
 if(array_key_exists("text", $msg)){
     $text = $update["message"]["text"];
+    strtolower($text);
 
     if($text == "/start") {
        $out = sm($chatID, "Ehi ehi", NULL); }
