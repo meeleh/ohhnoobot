@@ -44,13 +44,13 @@ if(array_key_exists("text", $msg)){
 	$out = sf($chatID, $photo, NULL);}
 	    //$out = sm($chatID, "Ehi ehi", NULL); 
 	
-    if($text =="ciao" or $text == "ehi") { 
+    elseif($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao!", $user_id);  }
 	
-    if($text == "Foto"){
+    elseif($text == "Foto"){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
-	
+
 	
 }
 
