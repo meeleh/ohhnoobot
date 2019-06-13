@@ -48,7 +48,7 @@ if(array_key_exists("text", $msg)){
     if($text == "foto"){
 	$photo = AgADBAADJrAxG3u7CFDD4nw-x4m6_UYVIhsABHR-peoVil9y30AGAAEC;
 	$photo = json_decode($photo, true);
-	$out = sf($chatID, $photo , NULL);
+	$out = sf($chatID, $photo , NULL); }
    // file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo=AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC');}
    
     if ($text == "gatto") {
