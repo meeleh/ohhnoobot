@@ -44,8 +44,8 @@ if(array_key_exists("text", $msg)){
         {if (strpos($text, "bella") !== false)
        { $out = sm($chatID,"Dimmi!", $user_id);  }} 
 	
-     if (stripos($text, "Marty") !== false)
-       { $out = sm($chatID,"Ciao!", $user_id);  }
+  //   if (stripos($text, "Marty") !== false)
+      // { $out = sm($chatID,"Ciao!", $user_id);  }
 
     if($text == "foto"){
 	$photo = 'AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC';
