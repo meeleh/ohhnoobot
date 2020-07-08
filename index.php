@@ -38,7 +38,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Ehi ehi", NULL); }
 	
     if($text =="ciao" or $text == "ehi") { 
-       $out = sm($chatID,"Ciao!".$user., $user_id);  }
+       $out = sm($chatID,"Ciao!".$user, $user_id);  }
 
      if($text == "Marty" and $text =="hey" or $text == "bella") { 
        $out = sm($chatID,"Ciao!", $user_id);  }
