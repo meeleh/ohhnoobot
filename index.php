@@ -42,7 +42,11 @@ if(array_key_exists("text", $msg)){
 
      if (stripos($text, "Marty") !== false)
         {if (stripos($text, "bella") !== false)
-       { $out = sm($chatID,"Sono io!", $user_id);  }} 
+       { $out = sm($chatID,"Sono io!", $user_id);  }}
+
+     if ($text[reply_to_message][from][id] == 1145887993) {
+        $out = sm($chatID,"eheh".$user."!", $user_id);  }
+
 	
   //   if (stripos($text, "Marty") !== false)
       // { $out = sm($chatID,"Ciao!", $user_id);  }
