@@ -42,7 +42,7 @@ if(array_key_exists("text", $msg)){
 
      if (strpos($text, "Marty") !== false)
         {if (strpos($text, "bella") !== false)
-       { $out = sm($chatID,"Ciao!", $user_id);  }} 
+       { $out = sm($chatID,"Dimmi!", $user_id);  }} 
 	
      if (stripos($text, "Marty") !== false)
        { $out = sm($chatID,"Ciao!", $user_id);  }
