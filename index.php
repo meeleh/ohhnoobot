@@ -40,7 +40,7 @@ if(array_key_exists("text", $msg)){
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
 
-     if (strpos($text, "Marty") !== false)
+     if (stripos($text, "Marty") !== false)
         {if (strpos($text, "bella") !== false)
        { $out = sm($chatID,"Dimmi!", $user_id);  }} 
 	
