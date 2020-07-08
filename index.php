@@ -9,6 +9,7 @@ $update = json_decode($content, true);
 $msg = $update["message"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
+$user= $update["message"]["from"]["first_name"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
@@ -37,7 +38,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Ehi ehi", NULL); }
 	
     if($text =="ciao" or $text == "ehi") { 
-       $out = sm($chatID,"Ciao!", $user_id);  }
+       $out = sm($chatID,"Ciao!".$user., $user_id);  }
 
      if($text == "Marty" and $text =="hey" or $text == "bella") { 
        $out = sm($chatID,"Ciao!", $user_id);  }
