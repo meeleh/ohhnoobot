@@ -41,13 +41,22 @@ if(array_key_exists("text", $msg)){
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
 
-     if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993)) {
-            if (stripos($text, "bella!") !== false)
-          { $out = sm($chatID,"Sono ioo", $user_id);  }
-}
 
-     if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) and (stripos($text, "bella!") !== false)) {
-             $out = sm($chatID,"Sono io", $user_id);  }
+      //Inizio risposta a Marty e reply
+
+     if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993)) {
+           
+          if (stripos($text, "bella") !== false)
+          { $out = sm($chatID,"Sono ioo", $user_id);  }
+          
+          if (stripos($text, "suca") !== false)
+          { $rand = array("mmm lo suca", "levati");
+            $out = sm($chatID,".array_rand($rand).", $user_id);  }
+          
+
+}
+      //Fine
+     
 
      //if ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) {
       //  $out = sm($chatID,"eheh", $user_id);  }
