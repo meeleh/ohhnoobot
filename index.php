@@ -75,7 +75,7 @@ if(array_key_exists("text", $msg)){
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
-       $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
+       $out = sm($chatID,"Ciao ".$user."!", NULL);  }
 
 
       //Inizio risposta a Marty e reply
