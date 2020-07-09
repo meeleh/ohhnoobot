@@ -53,7 +53,12 @@ if(array_key_exists("text", $msg)){
            
           if (stripos($text, "bella") !== false)
           { $out = sm($chatID,"Sono io", $user_id);  }
+
+          if (stripos($text, "nuda") !== false)
+           { $rand = array("mmm ti piace?", " no *si copre*", "non guardarmi", "ti odio");
           
+             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+
           if (stripos($text, "suca") !== false)
            { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
