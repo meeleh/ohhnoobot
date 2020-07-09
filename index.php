@@ -44,7 +44,7 @@ if(array_key_exists("text", $msg)){
 
       //Inizio risposta a Marty e reply
 
-     if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) or  (stripos($text, "@martinagrassobot") == true)) {
+     if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) or  (stripos($text, "@martinagrassobot")!== false)) {
            
           if (stripos($text, "bella") !== false)
           { $out = sm($chatID,"Sono ioo", $user_id);  }
