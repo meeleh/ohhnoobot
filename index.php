@@ -59,14 +59,18 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
           
-           if (stripos($text, "abbracciami") !== false)
-          { $out = sm($chatID,"abbraccia ".$user, $user_id); } 
+           if ((stripos($text, "abbracciami") !== false) or (stripos($text, "abbraccio") !== false)) 
+          { $out = sm($chatID,"*abbraccia ".$user."*", $user_id); } 
 
            
            if (stripos($text, "?") !== false)
           { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+
+          if ((stripos($text, "gnocca") !== false) or (stripos($text, "carina") !== false) or  (stripos($text, "sesso") !== false) or (stripos($text, "scopo") !== false)) 
+           { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");
+          
             
 }
       //Fine
