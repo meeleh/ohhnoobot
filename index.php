@@ -37,6 +37,11 @@ if(array_key_exists("text", $msg)){
 	
     if($text == "/start") {
 	$out = sm($chatID, "Che vuoi??", NULL); }
+
+     if (stripos($text, "martina") !== false)
+          { $out = sm($chatID,"Sono io", $user_id);  }
+          
+	
 	
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
