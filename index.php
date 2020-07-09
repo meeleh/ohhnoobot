@@ -60,7 +60,7 @@ if(array_key_exists("text", $msg)){
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
           
            if (stripos($text, "abbracciami") !== false)
-          { $out = sm($chatID,"abbraccia".$user, $user_id); } 
+          { $out = sm($chatID,"abbraccia ".$user, $user_id); } 
 
            
            if (stripos($text, "?") !== false)
