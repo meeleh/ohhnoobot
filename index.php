@@ -14,7 +14,7 @@ $user= $update["message"]["from"]["first_name"];
 function sm($chatID, $text, $reply) {
 global $api;
 global $update;
-$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.json_encode($update,JSON_PRETTY_PRINT));   
+//$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.json_encode($update,JSON_PRETTY_PRINT));   
 if($reply != NULL) {
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id='.$reply);	
 }
@@ -44,11 +44,11 @@ if(array_key_exists("text", $msg)){
      if (stripos($text, "Marty") !== false)
         {if (stripos($text, "bella") !== false)
        { 
-$out = sm($chatID,"Sono io!!", $user_id);  }
+$out = sm($chatID,"Sono ioo!!", $user_id);  }
 
 }
 
-     if ($_text["message"]["reply_to_message"]["from"]["id"] == "1145887993") {
+     if ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) {
         $out = sm($chatID,"eheh", $user_id);  }
 
 	
