@@ -74,12 +74,19 @@ if(array_key_exists("text", $msg)){
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
+
        if($text == "ok") {
 	$rand = array("sono porca", "Si", "che noia", "no" , NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", NULL);  }
+
+
+        if (stripos($text, "piedi") !== false)
+          { $rand = array("Mando foto piedi, per favore ditemi se sono carini", "Ho il 37 di piedi", "Mi scrivono solo per chiedermi i piedini... ", NULL, NULL, NULL, NULL, NULL);
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
       //Inizio risposta a Marty e reply
@@ -106,6 +113,8 @@ if(array_key_exists("text", $msg)){
           
            if ((stripos($text, "abbracciami") !== false) or (stripos($text, "abbraccio") !== false)) 
           { $out = sm($chatID,"*abbraccia ".$user."*", $user_id); } 
+
+
 
            
            if (stripos($text, "?") !== false)
