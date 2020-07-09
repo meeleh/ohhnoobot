@@ -14,7 +14,7 @@ $user= $update["message"]["from"]["first_name"];
 function sm($chatID, $text, $reply) {
 global $api;
 global $update;
-$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=.$chatID.&text='.json_encode($update,JSON_PRETTY_PRINT));   
+$dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.json_encode($update,JSON_PRETTY_PRINT));   
 if($reply != NULL) {
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id='.$chatID.'&text='.$text.'&reply_to_message_id='.$reply);	
 }
