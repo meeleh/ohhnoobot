@@ -30,6 +30,15 @@ if($reply != NULL) {
 else {	
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo='.$photo); }
 } 
+function file($chatID, $file, $reply) {
+global $api;
+global $update;
+if($reply != NULL) {
+	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file.'&reply_to_message_id='.$reply);	
+}
+else {	
+	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file); }
+} 
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 if(array_key_exists("text", $msg)){
@@ -107,7 +116,7 @@ if(array_key_exists("text", $msg)){
 
     if($text == "foto"){
 	$photo = 'AgACAgEAAxkBAAEvN5BfB4AF6PMS8MV1X8qimJ2fERLSRQACiqgxG-RfOUR_AWNll5FDtt6jEjAABAEAAwIAA3kAA-luAQABGgQ';
-	$out = sf($chatID, $photo , NULL); }
+	$out = file($chatID, $photo , NULL); }
    // file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo=AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC');}
    
     if ($text == "nerino") {
