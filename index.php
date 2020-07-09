@@ -47,12 +47,18 @@ if(array_key_exists("text", $msg)){
      if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) or  (stripos($text, "@martinagrassobot")!== false)) {
            
           if (stripos($text, "bella") !== false)
-          { $out = sm($chatID,"Sono ioo", $user_id);  }
+          { $out = sm($chatID,"Sono io", $user_id);  }
           
           if (stripos($text, "suca") !== false)
-           { $rand = array("mmm lo suca", "levati", "nnnn");
+           { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+
+           if ((stripos($text, "muori") !== false) or (stripos($text, "ammazzati") !== false) or  (stripos($text, "ammazzo") !== false)) 
+           { $rand = array("sta puttana non sa che una zombie è già dead", "caso umano", "levati", "ti spacco", "mi fai pena");
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+          
           
 
 }
@@ -75,7 +81,7 @@ if(array_key_exists("text", $msg)){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
 	
-   if($text == "moto"){
+   if($text == "gattino"){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
 	
