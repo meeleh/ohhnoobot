@@ -75,7 +75,7 @@ if(array_key_exists("text", $msg)){
 
 
        if($text == "ok") {
-	$rand = array("Che fate?", "Si", "che noia", "no" , NULL, NULL);
+	$rand = array("sono porca", "Si", "che noia", "no" , NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
