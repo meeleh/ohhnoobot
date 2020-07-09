@@ -63,6 +63,12 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
+        if (stripos($text, "tette") !== false)
+          { $rand = array("Ho le tettone", "mmm a chi le esco?", "Ragazzi, seguite @quetetas", "Ragazzi, seguite @tettinepiccole", "Succhiamele", NULL, NULL, NULL);
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+
+
 
        if($text == "ok") {
 	$rand = array("Che fate?", "Si", "che noia", "no" , NULL, NULL);
