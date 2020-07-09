@@ -63,6 +63,13 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
+       if (stripos($text, "dimmi") !== false)
+          { $rand = array("shhhh", "zitto", "zitta", "nudo", "nuda", "sesso nudo", NULL, NULL, NULL, NULL);
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+
+
+
         if (stripos($text, "tette") !== false)
           { $rand = array("Ho le tettone", "mmm a chi le esco?", "puoi anche essere donna ma se non hai le tettone sei solo un mostro deforme che non deve assolutamente parlare.", "Le tette sono l'antistress per eccellenza", "Succhiamele", NULL, NULL, NULL, NULL);
           
