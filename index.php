@@ -58,9 +58,15 @@ if(array_key_exists("text", $msg)){
 	if($text == "fame") {
 	$out = sm($chatID, "*offre un biscotto*", NULL); }
 
+        if (stripos($text, "latte") !== false)
+          { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
-        if($text == "ok") {
-	$out = sm($chatID, "Che fate?", NULL); }
+
+       if($text == "ok") {
+	$rand = array("Che fate?", "Si", "che noia", "no" , NULL, NULL);
+      $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
