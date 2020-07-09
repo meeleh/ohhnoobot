@@ -42,7 +42,7 @@ if(array_key_exists("text", $msg)){
 
      if (stripos($text, "Marty") !== false)
         {if (stripos($text, "bella") !== false)
-       { $out = sm($chatID, print_r($text) , $user_id);  
+       { $dati = file_get_contents('https://api.telegram.org/'.$api.'/sendMessage?chat_id=$chatid&text='.json_encode($text,JSON_PRETTY_PRINT));   
 $out = sm($chatID,"Sono io!", $user_id);  }
 
 }
