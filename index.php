@@ -77,7 +77,7 @@ if(array_key_exists("text", $msg)){
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");} 
          
             if (stripos($text, "cagna") !== false)
-           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");
+           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");} 
           
 }
       //Fine
