@@ -78,6 +78,13 @@ if(array_key_exists("text", $msg)){
          
             if (stripos($text, "cagna") !== false)
            { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");} 
+       
+           if (stripos($text, "anime") !== false)
+           { $rand = array("che schifo", "Il mio anime preferito è Evangelion", "roba da sfigati");} 
+          
+           if (stripos($text, "musica") !== false)
+           { $rand = array("ascolto musica bella", "Mi mancano i concertii", "hahaha boh");} 
+          
           
 }
       //Fine
