@@ -51,8 +51,8 @@ if(array_key_exists("text", $msg)){
           
           if (stripos($text, "suca") !== false)
           { $rand = array("mmm lo suca", "levati", "nnnn");
-            $random = array_rand(0, count($rand),-1);
-            $out = sm($chatID, $rand[0], $user_id);  }
+           
+            $out = sm($chatID, print($rand[array_rand($rand)], $user_id);  }
           
 
 }
