@@ -47,11 +47,21 @@ if(array_key_exists("text", $msg)){
     if($text == "/start") {
 	$out = sm($chatID, "Che vuoi??", NULL); }
 
+     
+      if($text == "sete") {
+	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
+
     // if (stripos($text, "martina") !== false)
         //  { $out = sm($chatID,"Sono io", $user_id);  }
           
 	
-	
+	if($text == "fame") {
+	$out = sm($chatID, "*offre un biscotto*", NULL); }
+
+
+        if($text == "ok") {
+	$out = sm($chatID, "Che fate?", NULL); }
+
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
 
@@ -90,7 +100,7 @@ if(array_key_exists("text", $msg)){
           if ((stripos($text, "gnocca") !== false) or (stripos($text, "carina") !== false) or  (stripos($text, "sesso") !== false) or (stripos($text, "scopo") !== false)) 
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");} 
          
-            if ((stripos($text, "cagna") !== false) or (stripos($text, "ti odio") !== false)) 
+            if ((stripos($text, "cagna") !== false) or (stripos($text, "odio") !== false)) 
            { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
        
