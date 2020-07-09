@@ -77,13 +77,16 @@ if(array_key_exists("text", $msg)){
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");} 
          
             if (stripos($text, "cagna") !== false)
-           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");} 
+           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");
+             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
        
            if (stripos($text, "anime") !== false)
-           { $rand = array("che schifo", "Il mio anime preferito è Evangelion", "roba da sfigati");} 
+           { $rand = array("che schifo", "Il mio anime preferito è Evangelion", "roba da sfigati");
+           $out = sm($chatID, ($rand[array_rand($rand)]), NULL); } 
           
            if (stripos($text, "musica") !== false)
-           { $rand = array("ascolto musica bella", "Mi mancano i concertii", "hahaha boh");} 
+           { $rand = array("ascolto musica bella", "Mi mancano i concertii", "hahaha boh");
+            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
           
 }
