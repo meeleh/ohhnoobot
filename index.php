@@ -59,8 +59,15 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
           
-          
+           if (stripos($text, "abbracciami") !== false)
+          { $out = sm($chatID,"abbraccia".$user, $user_id); } 
 
+           
+           if (stripos($text, "?") !== false)
+          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!");
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+            
 }
       //Fine
      
@@ -84,6 +91,8 @@ if(array_key_exists("text", $msg)){
    if($text == "gattino"){
 	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
 	$out = sf($chatID, $photo, NULL);}
+
+   
 	
 }
 //if(array_key_exists("photo", $msg))
