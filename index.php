@@ -49,10 +49,10 @@ if(array_key_exists("text", $msg)){
           if (stripos($text, "bella") !== false)
           { $out = sm($chatID,"Sono ioo", $user_id);  }
           
-          if (stripos($text, "suca") !== false)
-          { $rand = array("mmm lo suca", "levati", "nnnn");
-           
-            $out = sm($chatID, print_r($rand[array_rand($rand)], $user_id);  }
+        //  if (stripos($text, "suca") !== false)
+       //   { $rand = array("mmm lo suca", "levati", "nnnn");
+      //     
+        //    $out = sm($chatID, print_r($rand[array_rand($rand)], $user_id);  }
           
 
 }
