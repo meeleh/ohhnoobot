@@ -30,15 +30,15 @@ if($reply != NULL) {
 else {	
 	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo='.$photo); }
 } 
-function file($chatID, $file, $reply) {
-global $api;
-global $update;
-if($reply != NULL) {
-	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file.'&reply_to_message_id='.$reply);	
-}
-else {	
-	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file); }
-} 
+//function file($chatID, $file, $reply) {
+//global $api;
+//global $update;
+//if($reply != NULL) {
+//	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file.'&reply_to_message_id='.$reply);	
+//}
+//else {	
+//	$r = file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&file_id='.$file); }
+//} 
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 if(array_key_exists("text", $msg)){
