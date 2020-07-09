@@ -106,12 +106,12 @@ if(array_key_exists("text", $msg)){
       // { $out = sm($chatID,"Ciao!", $user_id);  }
 
     if($text == "foto"){
-	$photo = 'AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC';
+	$photo = 'AgACAgEAAxkBAAEvN5BfB4AF6PMS8MV1X8qimJ2fERLSRQACiqgxG-RfOUR_AWNll5FDtt6jEjAABAEAAwIAA3kAA-luAQABGgQ';
 	$out = sf($chatID, $photo , NULL); }
    // file_get_contents('https://api.telegram.org/'.$api.'/sendPhoto?chat_id='.$chatID.'&photo=AgADBAADBrIxG9ZMGFB0-4_B_pgDi0roHhsABLnx3cNvC6zq-wEHAAEC');}
    
-    if ($text == "gatto") {
-	$photo = 'https://www.miciogatto.it/new/wp-content/uploads/2018/02/Linguaggio-dei-gatti-come-capire-un-gatto-1030x587.jpg';
+    if ($text == "nerino") {
+	$photo = 'AgACAgEAAxkBAAEvN5BfB4AF6PMS8MV1X8qimJ2fERLSRQACiqgxG-RfOUR_AWNll5FDtt6jEjAABAEAAwIAA3kAA-luAQABGgQ';
 	$out = sf($chatID, $photo, NULL);}
 	
    if($text == "gattino"){
