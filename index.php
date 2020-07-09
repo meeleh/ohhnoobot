@@ -41,15 +41,15 @@ if(array_key_exists("text", $msg)){
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
 
-     if (stripos($text, "Marty") !== false)
-        {if (stripos($text, "bella") !== false)
+     if (stripos($text, "Marty") !== false or $update["message"]["reply_to_message"]["from"]["id"] == 1145887993)
+        {if (stripos($text, "bella!") !== false)
        { 
 $out = sm($chatID,"Sono ioo!!", $user_id);  }
 
 }
 
-     if ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) {
-        $out = sm($chatID,"eheh", $user_id);  }
+     //if ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) {
+      //  $out = sm($chatID,"eheh", $user_id);  }
 
 	
   //   if (stripos($text, "Marty") !== false)
