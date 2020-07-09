@@ -36,7 +36,7 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
-	$out = sm($chatID, "Che vuoi??", NULL); }
+	$out = sm($chatID, "Che vuoi???", NULL); }
 	
     if($text =="ciao" or $text == "ehi") { 
        $out = sm($chatID,"Ciao ".$user."!", $user_id);  }
@@ -52,7 +52,7 @@ if(array_key_exists("text", $msg)){
           if (stripos($text, "suca") !== false)
           { $rand = array("mmm lo suca", "levati");
             $random = array_rand($rand);
-            $out = sm($chatID, json_encode($random,JSON_PRETTY_PRINT), $user_id);  }
+            $out = sm($chatID, print_r($random), $user_id);  }
           
 
 }
