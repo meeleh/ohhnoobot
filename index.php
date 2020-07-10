@@ -113,6 +113,13 @@ if(array_key_exists("text", $msg)){
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
+     if ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
+         { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "Voi dove preferite scopare?", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", NULL, NULL);
+          
+           $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+ 
+     
+
       //Inizio risposta a Marty e reply
 
      if ((stripos($text, "Marty") !== false) or ($update["message"]["reply_to_message"]["from"]["id"] == 1145887993) or  (stripos($text, "@martinagrassobot")!== false)) {
@@ -146,7 +153,7 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-          if ((stripos($text, "gnocca") !== false) or (stripos($text, "carina") !== false) or  (stripos($text, "sesso") !== false) or (stripos($text, "scopo") !== false)) 
+          if ((stripos($text, "gnocca") !== false) or (stripos($text, "carina") !== false) or  (stripos($text, "scopo") !== false) or (stripos($text, "scopo") !== false)) 
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");
            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
           
