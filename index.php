@@ -48,10 +48,10 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
 
      
-      if($text == "sete") {
+      if (stripos($text, "sete") !== false) {
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
-	if($text == "fame") {
+	if (stripos($text, "fame") !== false){
 	$out = sm($chatID, "*offre un biscotto*", NULL); }
 
         if (stripos($text, "latte") !== false)
