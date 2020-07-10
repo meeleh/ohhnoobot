@@ -63,6 +63,11 @@ if(array_key_exists("text", $msg)){
           { $rand = array("shhhh", "zitto", "zitta", "nudo", "nuda", "sesso nudo", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+     
+       
+        if (stripos($text, "fake") !== false)
+          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL);
+          $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
 
