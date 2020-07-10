@@ -50,10 +50,6 @@ if(array_key_exists("text", $msg)){
      
       if($text == "sete") {
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
-
-    // if (stripos($text, "martina") !== false)
-        //  { $out = sm($chatID,"Sono io", $user_id);  }
-          
 	
 	if($text == "fame") {
 	$out = sm($chatID, "*offre un biscotto*", NULL); }
@@ -100,10 +96,10 @@ if(array_key_exists("text", $msg)){
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
      
         
-        if ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
-          { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
+   //     if ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
+      //    { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
           
-             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+        //     $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
       //Inizio risposta a Marty e reply
