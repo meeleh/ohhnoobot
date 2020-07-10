@@ -137,7 +137,7 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-           if ((stripos($text, "muori") !== false) or (stripos($text, "ammazzati") !== false) or  (stripos($text, "ammazzo") !== false)) 
+           if ((stripos($text, "muori") !== false) or (stripos($text, "ammazzati") !== false) or  (stripos($text, "ammazzo") !== false) or (stripos($text, "ucciditi") !== false) ) 
            { $rand = array("sta puttana non sa che una zombie è già dead", "caso umano", "levati", "ti spacco", "mi fai pena");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
