@@ -160,6 +160,11 @@ if(array_key_exists("text", $msg)){
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");
            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
           
+          if ((stripos($text, "ti bacio") !== false) or (stripos($text, "ti lecco") !== false) or  (stripos($text, "ti abbraccio") !== false) or (stripos($text, "voglio scoparti") !== false)) 
+           { $rand = array("*arrossisce*", "aw *ricambia*", "ehm grazie hahah", "hahahaha", "sii che bello");
+           $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
+          
+
          
             if ((stripos($text, "cagna") !== false) or (stripos($text, "odio") !== false) or (stripos($text, "puttana") !== false) or (stripos($text, "zoccola") !== false) or (stripos($text, "zitta") !== false) or (stripos($text, "taci") !== false) or (stripos($text, "cogliona") !== false)) 
            { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci", "Ho più palle di te bimbo di merda");
