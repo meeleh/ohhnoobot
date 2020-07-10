@@ -146,7 +146,7 @@ if(array_key_exists("text", $msg)){
           { $out = sm($chatID,"*abbraccia ".$user."*", $user_id); } 
 
         
-         if ((stripos($text, "ti voglio bene") !== false) or (stripos($text, "abbra" ) !== false)) 
+         if ((stripos($text, "ti voglio bene") !== false) or (stripos($text, "tvb" ) !== false)) 
           { $out = sm($chatID,"ti voglio bene anche io ❤️", $user_id); } 
 
 
