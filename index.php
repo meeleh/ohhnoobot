@@ -145,6 +145,9 @@ if(array_key_exists("text", $msg)){
            if ((stripos($text, "abbracciami") !== false) or (stripos($text, "abbraccio") !== false)) 
           { $out = sm($chatID,"*abbraccia ".$user."*", $user_id); } 
 
+        
+         if ((stripos($text, "ti voglio bene") !== false) or (stripos($text, "abbra" ) !== false)) 
+          { $out = sm($chatID,"ti voglio bene anche io", $user_id); } 
 
 
            
