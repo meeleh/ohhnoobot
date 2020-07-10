@@ -92,7 +92,7 @@ if(array_key_exists("text", $msg)){
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
-       $rand = array("Ciao", "Ehi ehi", "che noia", "da quanto tempoo" , "A quanti di voi il tè alla pesca l'estate crea dipendenza?", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL);
+       $rand = array("Ciao", "Ehi ehi", "che noia", "da quanto tempoo" , "A quanti di voi il tè alla pesca l'estate crea dipendenza?", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", "Qualcuno ha degli sticker veramente ignoranti ?", "Noia. Cosa posso fare?", "Fa troppo caldo :(", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
