@@ -147,7 +147,7 @@ if(array_key_exists("text", $msg)){
 
         
          if ((stripos($text, "ti voglio bene") !== false) or (stripos($text, "abbra" ) !== false)) 
-          { $out = sm($chatID,"ti voglio bene anche io", $user_id); } 
+          { $out = sm($chatID,"ti voglio bene anche io ❤️", $user_id); } 
 
 
            
