@@ -106,6 +106,11 @@ if(array_key_exists("text", $msg)){
          { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+ 
+     
+      if ((stripos($text, "brutto") !== false) or (stripos($text, "cesso") !== false) or (stripos($text, "incel") !== false))  { 
+       $rand = array("Un brutto fatica tantissimo a conquistare una ragazza, spesso impiegando molto tempo. Se la perde può non avere alternative, anzi di sicuro non ha la ruota di scorta pronta. E rischia anzi è altamente probabile che debba dover restare solo per lungo tempo", "L'uomo è obbligato dalla società a dimostrare qualcosa. La donna obbliga se stessa a dimostrare qualcosa agli altri.", "Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "Oddio.. Non credo dipenda da quanto sia bello o brutto" , "Ho il brutto vizio di non avere vie di mezzo", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL);
+      $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
       //Inizio risposta a Marty e reply
