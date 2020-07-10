@@ -45,7 +45,7 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
-	$out = sm($chatID, "Che vuoi??", NULL); }
+	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
 
      
       if($text == "sete") {
@@ -87,7 +87,8 @@ if(array_key_exists("text", $msg)){
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
     if($text =="ciao" or $text == "ehi") { 
-       $out = sm($chatID,"Ciao ".$user."!", NULL);  }
+       $rand = array("Ciao", "Ehi ehi", "che noia", "da quanto tempoo" , "A quanti di voi il tè alla pesca l'estate crea dipendenza?", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL);
+      $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
         if (stripos($text, "piedi") !== false)
@@ -96,10 +97,10 @@ if(array_key_exists("text", $msg)){
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
      
         
-   //     if ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
-      //    { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
+       if ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
+         { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
           
-        //     $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+           $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
       //Inizio risposta a Marty e reply
@@ -131,7 +132,7 @@ if(array_key_exists("text", $msg)){
 
            
            if (stripos($text, "?") !== false)
-          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!", "ci sono dei pro e dei contro" );
+          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!", "ci sono dei pro e dei contro", "cosa vuoi ottenere da queste domande vaghe?", "Ci vuole anche un po' di buon senso a volte");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
