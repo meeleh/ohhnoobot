@@ -76,10 +76,14 @@ if(array_key_exists("text", $msg)){
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
          if (stripos($text, "Notte") !== false)
-          { $rand = array("Nottee", "Dormi bene :) ", "Non riesco ad addormentarmi... ", NULL, NULL, NULL, NULL, NULL);
+          { $rand = array("Nottee", "Dormi bene :) ", "Non riesco ad addormentarmi... ", "sogni d'oro", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
+        if (stripos($text, "Buongiorno") !== false)
+          { $rand = array("Giornoo", "Hai dormito abbastanza?", "Ho dormito pochissimo questa notte, che stanchezza", "che sonno", NULL, NULL, NULL, NULL);
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
        if($text == "ok") {
@@ -125,7 +129,7 @@ if(array_key_exists("text", $msg)){
 
            
            if (stripos($text, "?") !== false)
-          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!");
+          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!", "ci sono dei pro e dei contro" );
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
