@@ -141,8 +141,8 @@ if(array_key_exists("text", $msg)){
            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
           
          
-            if ((stripos($text, "cagna") !== false) or (stripos($text, "odio") !== false) or (stripos($text, "puttana") !== false) or (stripos($text, "zoccola") !== false)) 
-           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci");
+            if ((stripos($text, "cagna") !== false) or (stripos($text, "odio") !== false) or (stripos($text, "puttana") !== false) or (stripos($text, "zoccola") !== false) or (stripos($text, "zitta") !== false) or (stripos($text, "taci") !== false) or (stripos($text, "cogliona") !== false)) 
+           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci", "Ho più palle di te bimbo di merda");
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
        
            if (stripos($text, "anime") !== false)
