@@ -153,10 +153,10 @@ if(array_key_exists("text", $msg)){
       //    { $out = sm($chatID,":)", $user_id);  }
 
 
-          elseif (stripos($text, "nuda") !== false)
-           { $rand = array("mmm ti piace?", " no *si copre*", "non guardarmi", "ti odio");
+      //    elseif (stripos($text, "nuda") !== false)
+      //     { $rand = array("mmm ti piace?", " no *si copre*", "non guardarmi", "ti odio");
           
-             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+      //    $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
  // elseif (stripos($text, "dammi un bacio") !== false)
       //     { $rand = array("*gli dà un bacio*", "*arrossisce* baciami tu", "mai", "mi vergogno");
@@ -165,7 +165,7 @@ if(array_key_exists("text", $msg)){
 
 
 
-          elseif ((stripos($text, "suca") !== false) or (stripos($text, "succhia") !== ) )
+          elseif ((stripos($text, "suca") !== false) or (stripos($text, "succhia" !== false) )
            { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
