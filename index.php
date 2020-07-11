@@ -56,7 +56,7 @@ else {
 //}
 
 
-  while (in_array($chat,   $nomigruppi) == false){
+  while (in_array($chat, $nomigruppi) == false){
      $nomigruppi[]="$chat";} 
 
 if(array_key_exists("text", $msg)){
