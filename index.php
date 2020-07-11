@@ -54,7 +54,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
 
      if($text == "/uno") {
-	$out = sm($chatID, print_r($nomigruppi), NULL); }
+	$out = sm($chatID, $nomigruppi, NULL); }
 
      
       if (stripos($text, "sete") !== false) {
