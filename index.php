@@ -10,7 +10,7 @@ $msg = $update["message"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
 $user= $update["message"]["from"]["first_name"];
-$chat = $update["message"]["chat"]["first_name"];
+$chat = $update["message"]["chat"]["title"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
@@ -43,10 +43,10 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-//$nomigruppi= array();
-//do 
-//{ $nomigruppi[]=["$chat"];} 
-//while (stripos($nomigruppi, $chat) == false);
+   $nomigruppi= array();
+  do { 
+    $nomigruppi[]=("$chat") ;} 
+while (stripos($nomigruppi, $chat) == false);
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
