@@ -10,6 +10,7 @@ $msg = $update["message"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
 $user= $update["message"]["from"]["first_name"];
+$chat = $update["message"]["chat"]["title"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
@@ -41,11 +42,19 @@ else {
 //} 
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
+
+do 
+{ $nomigruppi[]=["$chat"];} 
+while (in_array($chat, $nomigruppi == false)
+
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
 	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
+
+     if($text == "/uno") {
+	$out = sm($chatID, $nomigruppi, NULL); }
 
      
       if (stripos($text, "sete") !== false) {
