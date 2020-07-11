@@ -66,13 +66,13 @@ if(array_key_exists("text", $msg)){
      
        
         if (stripos($text, "fake") !== false)
-          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL);
+          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL, NULL);
           $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
 
         if (stripos($text, "tette") !== false)
-          { $rand = array("Ho le tettone", "mmm a chi le esco?", "puoi anche essere donna ma se non hai le tettone sei solo un mostro deforme che non deve assolutamente parlare.", "Le tette sono l'antistress per eccellenza", "Succhiamele", NULL, NULL, NULL, NULL);
+          { $rand = array("Ho le tettone", "mmm a chi le esco?", "puoi anche essere donna ma se non hai le tettone sei solo un mostro deforme che non deve assolutamente parlare.", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Giocherei con le tette di".$user_id, NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
@@ -109,7 +109,7 @@ if(array_key_exists("text", $msg)){
  
      
       if ((stripos($text, "brutto") !== false) or (stripos($text, "cesso") !== false) or (stripos($text, "incel") !== false))  { 
-       $rand = array("Un brutto fatica tantissimo a conquistare una ragazza, spesso impiegando molto tempo. Se la perde può non avere alternative, anzi di sicuro non ha la ruota di scorta pronta. E rischia anzi è altamente probabile che debba dover restare solo per lungo tempo", "L'uomo è obbligato dalla società a dimostrare qualcosa. La donna obbliga se stessa a dimostrare qualcosa agli altri.", "Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "Oddio.. Non credo dipenda da quanto sia bello o brutto" , "Ho il brutto vizio di non avere vie di mezzo", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL);
+       $rand = array("Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "Oddio.. Non credo dipenda da quanto sia bello o brutto" , "Ho il brutto vizio di non avere vie di mezzo", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
