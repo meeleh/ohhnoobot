@@ -66,7 +66,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Scrivimi ancora e ti blocco.", NULL); }
 
      if($text == "/uno") {
-	$out = sm($chatID, "ci sono".count($nomigruppi), NULL); }
+	$out = sm($chatID, "ci sono".count($nomigruppi)."", NULL); }
 
      
       if (stripos($text, "sete") !== false) {
