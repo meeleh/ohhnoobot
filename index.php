@@ -44,7 +44,6 @@ else {
 //Azioni
 
 
-    $nomigruppi= array();
   while (in_array($chat,   $nomigruppi) == false){
      $nomigruppi[]="$chat";} 
 
