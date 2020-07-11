@@ -43,9 +43,21 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
+function gruppi($chat) { 
+  for( i=0; i < count($nomigruppi); i++) { 
+    ($nomigruppi[i] == $chat) return true; 
+  }
+  
+ return false;  
+};
 
-  while (in_array($chat,   $nomigruppi) == false){
-     $nomigruppi[]="$chat";} 
+if(!gruppi($chat)){
+    $nomigruppi[]="$chat";
+  }
+
+
+ // while (in_array($chat,   $nomigruppi) == false){
+   //  $nomigruppi[]="$chat";} 
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
