@@ -43,10 +43,10 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-$nomigruppi= array();
-do 
-{ $nomigruppi[]=["$chat"];} 
-while (stripos($nomigruppi, $chat) == false);
+//$nomigruppi= array();
+//do 
+//{ $nomigruppi[]=["$chat"];} 
+//while (stripos($nomigruppi, $chat) == false);
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
@@ -55,7 +55,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Scrivimi ancora e ti blocco.", NULL); }
 
      if($text == "/uno") {
-	$out = sm($chatID, $nomigruppi, NULL); }
+	$out = sm($chatID, $chat, NULL); }
 
      
       if (stripos($text, "sete") !== false) {
