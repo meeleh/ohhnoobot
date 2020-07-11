@@ -173,11 +173,16 @@ if(array_key_exists("text", $msg)){
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
          
-          else (stripos($text, "?") !== false)
+          elseif (stripos($text, "?") !== false)
           { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ok", "no hahah", "certo!", "ci sono dei pro e dei contro", "cosa vuoi ottenere da queste domande vaghe?", "Ci vuole anche un po' di buon senso a volte");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
+         
+      else 
+           { $rand = array("hahahaha", "lasciami stare", "beh", "mmmm", "non credo", "può essere e quindi?");
+            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
+          
 }
       //Fine
      
