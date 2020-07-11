@@ -46,7 +46,7 @@ else {
 $nomigruppi[]= 0;
 do 
 { $nomigruppi[]=["$chat"];} 
-while (in_array($chat, $nomigruppi == false)
+while (in_array($chat, $nomigruppi == false);
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
