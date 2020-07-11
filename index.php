@@ -10,7 +10,7 @@ $msg = $update["message"];
 $chatID = $update["message"]["chat"]["id"];
 $user_id = $update["message"]["message_id"];
 $user= $update["message"]["from"]["first_name"];
-$chat = $update["message"]["chat"]["title"];
+$chat = $update["message"]["chat"]["first_name"];
 //Funzioni
 function sm($chatID, $text, $reply) {
 global $api;
