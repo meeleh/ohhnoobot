@@ -56,7 +56,7 @@ else {
 }. */
 
 
-  while (array_key_exists($chat, $nomigruppi) == false){
+  while (stripos($nomigruppi, $chat) == false){
     $nomigruppi[]="$chat";} 
 
 if(array_key_exists("text", $msg)){
