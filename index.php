@@ -180,7 +180,7 @@ if(array_key_exists("text", $msg)){
 
          
       else 
-           { $rand = array("hahahaha", "lasciami stare", "beh", "mmmm", "non credo", "può essere e quindi?");
+           { $rand = array("hahahaha", "lasciami stare", "beh", "mmmm", "non credo", "può essere e quindi?", "*ignora quello che dice e gli dà un bacio*");
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
 }
