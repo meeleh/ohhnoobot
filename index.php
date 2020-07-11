@@ -170,10 +170,10 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-          elseif ((stripos($text, "come stai") !== false) or (stripos($text, "come va") !== false) )
-           { $rand = array("bene, tu?", "ho un po' di mal di testa, tu?", "mmm bene dai, tu?", "solo un po' stanca, tu?");
+     //     elseif ((stripos($text, "come stai") !== false) or (stripos($text, "come va") !== false) )
+    //    { $rand = array("bene, tu?", "ho un po' di mal di testa, tu?", "mmm bene dai, tu?", "solo un po' stanca, tu?");
           
-             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+       //      $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
 
            elseif ((stripos($text, "muori") !== false) or (stripos($text, "ammazzati") !== false) or  (stripos($text, "ammazzo") !== false) or (stripos($text, "ucciditi") !== false) ) 
