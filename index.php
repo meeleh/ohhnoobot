@@ -43,21 +43,21 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-//function gruppi($chat, $nomigruppi) { 
-//  for( i=0; i < count($nomigruppi); i++) { 
- //   ($nomigruppi[i] == $chat) return true; 
-//  }
+function gruppi($chat, $nomigruppi) { 
+  for( i=0; i < count($nomigruppi); i++) { 
+  ($nomigruppi[i] == $chat) return true; 
+ }
 
-// return false;  
-//};
+ return false;  
+};
 
-//if(!gruppi($chat, $nomigruppi)){
-//    $nomigruppi[]="$chat";
-//}
+ if(gruppi($chat, $nomigruppi) == false){
+   $nomigruppi[]="$chat";
+}
 
 
-  while (array_key_exists($chat, $nomigruppi) == false){
-     $nomigruppi[]="$chat";} 
+//  while (array_key_exists($chat, $nomigruppi) == false){
+   //  $nomigruppi[]="$chat";} 
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
