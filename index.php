@@ -43,6 +43,7 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
+$nomigruppi[]= 0;
 do 
 { $nomigruppi[]=["$chat"];} 
 while (in_array($chat, $nomigruppi == false)
@@ -51,7 +52,7 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
-	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
+	$out = sm($chatID, "Scrivimi ancora e ti blocco.", NULL); }
 
      if($text == "/uno") {
 	$out = sm($chatID, $nomigruppi, NULL); }
