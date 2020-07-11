@@ -149,8 +149,8 @@ if(array_key_exists("text", $msg)){
           { $out = sm($chatID,"Sono io", $user_id);  }
 
          
-           elseif ((stripos($text, "esatto") !== false) or (stripos($text, "giusto") !== false) or  (stripos($text, "mi piaci") !== false) or (stripos($text, "simpatica") !== false) )
-          { $out = sm($chatID,":)", $user_id);  }
+     //      elseif ((stripos($text, "esatto") !== false) or (stripos($text, "giusto") !== false) or  (stripos($text, "mi piaci") !== false) or (stripos($text, "simpatica") !== false) )
+      //    { $out = sm($chatID,":)", $user_id);  }
 
 
           elseif (stripos($text, "nuda") !== false)
