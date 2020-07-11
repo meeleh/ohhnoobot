@@ -43,7 +43,7 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-function gruppi($chat, $nomigruppi) { 
+/* function gruppi($chat, $nomigruppi) { 
   for( i=0; i < count($nomigruppi); i++) { 
   ($nomigruppi[i] == $chat) return true; 
  }
@@ -53,11 +53,11 @@ function gruppi($chat, $nomigruppi) {
 
  if(gruppi($chat, $nomigruppi) == false){
    $nomigruppi[]="$chat";
-}
+}. */
 
 
-//  while (array_key_exists($chat, $nomigruppi) == false){
-   //  $nomigruppi[]="$chat";} 
+  while (array_key_exists($chat, $nomigruppi) == false){
+    $nomigruppi[]="$chat";} 
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
@@ -66,7 +66,7 @@ if(array_key_exists("text", $msg)){
 	$out = sm($chatID, "Scrivimi ancora e ti blocco.", NULL); }
 
      if($text == "/uno") {
-	$out = sm($chatID, $nomigruppi, NULL); }
+	$out = sm($chatID, "ci sono".count($nomigruppi), NULL); }
 
      
       if (stripos($text, "sete") !== false) {
