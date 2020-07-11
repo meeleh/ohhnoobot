@@ -132,6 +132,13 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
+     elseif (stripos($text, "miel") !== false)
+           { $rand = array(".$user_id.", ".$user.");
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+
+
+
           elseif (stripos($text, "suca") !== false)
            { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
