@@ -148,24 +148,29 @@ if(array_key_exists("text", $msg)){
           if (stripos($text, "bella") !== false)
           { $out = sm($chatID,"Sono io", $user_id);  }
 
+         
+           elseif ((stripos($text, "esatto") !== false) or (stripos($text, "giusto") !== false) or  (stripos($text, "mi piaci") !== false) or (stripos($text, "simpatica") !== false) )
+          { $out = sm($chatID,":)", $user_id);  }
+
+
           elseif (stripos($text, "nuda") !== false)
            { $rand = array("mmm ti piace?", " no *si copre*", "non guardarmi", "ti odio");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-     elseif (stripos($text, "miel") !== false)
-           { $rand = array(".$user_id.", ".$user.");
+     elseif (stripos($text, "dammi un bacio") !== false)
+           { $rand = array("*gli dà un bacio*", "*arrossisce* baciami tu", "mai", "mi vergogno");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
 
 
-          elseif ((stripos($text, "suca") !== false or (stripos($text, "succhia") !== ) )
+          elseif ((stripos($text, "suca") !== false) or (stripos($text, "succhia") !== ) )
            { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-          elseif ((stripos($text, "come stai") !== false or (stripos($text, "come va") !== ) )
+          elseif ((stripos($text, "come stai") !== false) or (stripos($text, "come va") !== ) )
            { $rand = array("bene, tu?", "ho un po' di mal di testa, tu?", "mmm bene dai, tu?", "solo un po' stanca, tu?");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
