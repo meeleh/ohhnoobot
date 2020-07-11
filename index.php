@@ -165,10 +165,10 @@ if(array_key_exists("text", $msg)){
 
 
 
-          elseif ((stripos($text, "suca") !== false) or (stripos($text, "succhia" !== false) )
-           { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
+      //    elseif ((stripos($text, "suca") !== false) or (stripos($text, "succhia") !== false) )
+         //  { $rand = array("mmm *lo suca*", "va bene *glielo suca fino a farlo venire*", "levati", "no, ce l'hai troppo piccolo");
           
-             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+           //  $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
      //     elseif ((stripos($text, "come stai") !== false) or (stripos($text, "come va") !== false) )
     //    { $rand = array("bene, tu?", "ho un po' di mal di testa, tu?", "mmm bene dai, tu?", "solo un po' stanca, tu?");
