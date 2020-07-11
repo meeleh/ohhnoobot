@@ -43,10 +43,9 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-   $nomigruppi= array();
-  do { 
-    $nomigruppi[]=("$chat") ;} 
-while (stripos($nomigruppi, $chat) == false);
+
+  for ( $nomigruppi= array(); stripos($nomigruppi, $chat) == false;) {
+    $nomigruppi[]=("$chat");} 
 
 if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
