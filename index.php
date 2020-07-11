@@ -52,10 +52,10 @@ if(array_key_exists("text", $msg)){
     $text = strtolower($update["message"]["text"]);
 	
     if($text == "/start") {
-	$out = sm($chatID, "Scrivimi ancora e ti blocco.", NULL); }
+	$out = sm($chatID, "Scrivimi ancora e ti blocco", NULL); }
 
      if($text == "/uno") {
-	$out = sm($chatID, $chat, NULL); }
+	$out = sm($chatID, $nomigruppi, NULL); }
 
      
       if (stripos($text, "sete") !== false) {
