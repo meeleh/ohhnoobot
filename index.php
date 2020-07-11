@@ -43,7 +43,7 @@ else {
 ///////////////////////////////////////////////////////////////////////////
 //Azioni
 
-function gruppi($chat) { 
+function gruppi($chat, $nomigruppi) { 
   for( i=0; i < count($nomigruppi); i++) { 
     ($nomigruppi[i] == $chat) return true; 
   }
@@ -51,7 +51,7 @@ function gruppi($chat) {
  return false;  
 };
 
-if(!gruppi($chat)){
+if(!gruppi($chat, $nomigruppi)){
     $nomigruppi[]="$chat";
   }
 
