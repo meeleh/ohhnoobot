@@ -158,10 +158,10 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
-     elseif (stripos($text, "dammi un bacio") !== false)
-           { $rand = array("*gli dà un bacio*", "*arrossisce* baciami tu", "mai", "mi vergogno");
+ // elseif (stripos($text, "dammi un bacio") !== false)
+      //     { $rand = array("*gli dà un bacio*", "*arrossisce* baciami tu", "mai", "mi vergogno");
           
-             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+         //    $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
 
 
 
