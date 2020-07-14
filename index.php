@@ -159,7 +159,8 @@ if(array_key_exists("text", $msg)){
           
 }
       //Fine risposta Mary
-
+Else 
+{
 
 
 
@@ -233,7 +234,7 @@ if(array_key_exists("text", $msg)){
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
  
-     
+ }   
 
 
      
