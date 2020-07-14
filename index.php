@@ -103,6 +103,13 @@ if(array_key_exists("text", $msg)){
        { $rand = array("bene, tu?", "ho un po' di mal di testa, tu?", "mmm bene dai, tu?", "solo un po' stanca, tu?");
           
             $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+  
+     
+       elseif (stripos($text, "che fai") !== false) 
+       { $rand = array("niente di che, tu?", "ho un po' di mal di testa, tu?", "mi annoio, tu", "fra poco doccia, tu?");
+          
+            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
+
 
 
            elseif ((stripos($text, "muori") !== false) or (stripos($text, "ammazzati") !== false) or  (stripos($text, "ammazzo") !== false) or (stripos($text, "ucciditi") !== false) ) 
@@ -110,7 +117,7 @@ if(array_key_exists("text", $msg)){
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
           
-           elseif ((stripos($text, "abbracciami") !== false) or (stripos($text, "abbraccio") !== false)) 
+           elseif ((stripos($text, "abbracciami") !== false) or (stripos($text, "abbraccio") !== false) or (stripos($text, "coccole") !== false)) 
           { $out = sm($chatID,"*abbraccia ".$user."*", $user_id); } 
 
         
@@ -126,6 +133,11 @@ if(array_key_exists("text", $msg)){
            { $rand = array("fatti abbracciare ❤️", "sei un amore ❤️", "aw, credo di provare dei sentimenti fortissimi per te", "Ti voglio tanto bene, sai?", "sei speciale ❤️");
            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
           
+         elseif (stripos($text, "Buongiorno") !== false)
+          { $rand = array("Giornoo", "Hai dormito abbastanza?", "Ho stra sonno", "che sonno", "Buongiorno a te", "Che bello risentirti");
+          
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+
 
     
           elseif ((stripos($text, "ti bacio") !== false) or (stripos($text, "ti lecco") !== false) or  (stripos($text, "ti abbraccio") !== false) or (stripos($text, "voglio scoparti") !== false)) 
@@ -146,6 +158,11 @@ if(array_key_exists("text", $msg)){
            { $rand = array("ascolto musica bella", "Mi mancano i concertii", "hahaha boh");
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
+        elseif (stripos($text, "ciao") !== false)
+           { $rand = array("ciao", "ehii", "ciao, come va?", "mancavi");
+            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
+          
+       
          
           elseif (stripos($text, "?") !== false)
           { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ook", "no hahah", "certo!", "ci sono dei pro e dei contro", "cosa vuoi ottenere da queste domande vaghe?", "Ci vuole anche un po' di buon senso a volte");
