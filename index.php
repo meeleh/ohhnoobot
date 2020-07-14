@@ -124,7 +124,12 @@ if(array_key_exists("text", $msg)){
          elseif ((stripos($text, "ti voglio bene") !== false) or (stripos($text, "tvb" ) !== false)) 
           { $out = sm($chatID,"ti voglio bene anche io ❤️", $user_id); } 
            
+                 
+         elseif ((stripos($text, "ti amo") !== false) or (stripos($text, "mi piaci") !== false) or  (stripos($text, "innamorato") !== false)) 
+           { $rand = array("fatti baciare ❤️", "sei un amore ❤️", "aw, credo di provare dei sentimenti fortissimi per te", "Non ricambio questi sentimenti ecco ", "sei speciale", "hahaha carino", "no dai hahah" );
+           $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
           
+  
           elseif ((stripos($text, "gnocca") !== false) or (stripos($text, "carina") !== false) or  (stripos($text, "scopo") !== false) or (stripos($text, "topa") !== false)) 
            { $rand = array("graziee", "lo so hahah", "levati", "hahahaha", "baciami");
            $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
