@@ -189,72 +189,75 @@ Else
       if (stripos($text, "sete") !== false) {
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
-	if (stripos($text, "fame") !== false){
+	elseif (stripos($text, "fame") !== false){
 	$out = sm($chatID, "*offre un biscotto*", NULL); }
 
-        if (stripos($text, "latte") !== false)
+        elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
-       if (stripos($text, "dimmi") !== false)
+       elseif (stripos($text, "dimmi") !== false)
           { $rand = array("shhhh", "zitto", "zitta", "nudo", "nuda", "sesso nudo", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
      
        
-        if (stripos($text, "fake") !== false)
-          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL, NULL);
+        elseif (stripos($text, "fake") !== false)
+          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL, NULL, NULL);
           $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
 
-        if (stripos($text, "tette") !== false)
+        elseif (stripos($text, "tette") !== false)
           { $rand = array("Ho le tettone", "mmm a chi le esco?", "puoi anche essere donna ma se non hai le tettone sei solo un mostro deforme che non deve assolutamente parlare.", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Le tette non c'entrano sempre" , NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
-         if (stripos($text, "Notte") !== false)
+         elseif (stripos($text, "Notte") !== false)
           { $rand = array("Nottee", "Dormi bene :) ", "Non riesco ad addormentarmi... ", "sogni d'oro", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
-        if (stripos($text, "Buongiorno") !== false)
+        elseif (stripos($text, "Buongiorno") !== false)
           { $rand = array("Giornoo", "Hai dormito abbastanza?", "Ho dormito pochissimo questa notte, che stanchezza", "che sonno", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
-       if($text == "ok") {
+       elseif($text == "ok") {
 	$rand = array("sono porca", "Si", "che noia", "no" , "okok", "Mi nutro di casi umani a colazione", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
-    if($text =="ciao" or $text == "ehi") { 
+    elseif($text =="ciao" or $text == "ehi") { 
        $rand = array("Ciao", "Ehi ehi", "che noia", "ciao di nuovo", "Tutto bene?", NULL, "da quanto tempoo", "Qualcuno ha degli sticker veramente ignoranti ?", "Noia. Cosa posso fare?", "Fa troppo caldo :(", "Mi nutro di casi umani a colazione", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
-        if (stripos($text, "piedi") !== false)
+        elseif (stripos($text, "piedi") !== false)
           { $rand = array("Mando foto piedi, per favore ditemi se sono carini", "Ho il 37 di piedi", "Mi scrivono solo per chiedermi i piedini... ", NULL, NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
      
         
-       if ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
+       elseif ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
          { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
  
      
-      if ((stripos($text, "brutto") !== false) or (stripos($text, "cesso") !== false) or (stripos($text, "incel") !== false))  { 
+      elseif ((stripos($text, "brutto") !== false) or (stripos($text, "cesso") !== false) or (stripos($text, "incel") !== false))  { 
        $rand = array("Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "Oddio.. Non credo dipenda da quanto sia bello o brutto" , "Ho il brutto vizio di non avere vie di mezzo", "Il mondo è una giungla moderna. Sbrani o vieni sbranato. Fine", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
-     if ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
+     elseif ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
          { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "Voi dove preferite scopare?", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+
+      else
+         {NULL;} 
  
  }   
 
