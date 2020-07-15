@@ -252,7 +252,7 @@ Else
 
 
      elseif ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
-         { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "Voi dove preferite scopare?", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
+         { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
