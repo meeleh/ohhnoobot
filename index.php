@@ -235,7 +235,7 @@ Else
 
 
         elseif (stripos($text, "piedi") !== false)
-          { $rand = array("Mando foto piedi, per favore ditemi se sono carini", "Ho il 37 di piedi", "Mi scrivono solo per chiedermi i piedini... ", NULL, NULL, NULL, NULL, NULL);
+          { $rand = array("Mando foto piedi, per favore ditemi se sono carini", "Ho il 37 di piedi", "Mi scrivono solo per chiedermi i piedini... ", "piedini", NULL, NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
      
