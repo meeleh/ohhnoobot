@@ -152,7 +152,7 @@ if(array_key_exists("text", $msg)){
 
          
             elseif ((stripos($text, "cagna") !== false) or (stripos($text, "odio") !== false) or (stripos($text, "puttana") !== false) or (stripos($text, "zoccola") !== false) or (stripos($text, "zitta") !== false) or (stripos($text, "taci") !== false) or (stripos($text, "cogliona") !== false)) 
-           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci", "Ho più palle di te bimbo di merda");
+           { $rand = array("caso umano", "sono io", "puoi stare zitto? ", "taci", "Ho più palle di te bimbo di merda", "Continuerai ad abbaiare a lungo, cagnolino, o comincerai a mordere?" );
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);} 
        
            elseif (stripos($text, "anime") !== false)
@@ -253,9 +253,11 @@ Else
 
 
      elseif ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
-         { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
+         { $rand = array("Ma quando ti decidi a scopare?", "Voglio fare sesso", "abbiamo capito", "ancora", "si ok", "se devo scopare mi scopo qualcosa di decente non un buco qualsiasi", "voglio solo affetto, che schifo il sesso", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+
+
 
       else
          {NULL;} 
