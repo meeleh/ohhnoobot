@@ -225,10 +225,11 @@ Else
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
-       elseif($text == "ok") {
-	$rand = array("sono porca", "Si", "che noia", "no" , "okok", "Mi nutro di casi umani a colazione", NULL, NULL);
+       elseif($text == "ok" or $text == "no" or $text == "si") {
+	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppp", "quindi", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
+       
     elseif($text =="ciao" or $text == "ehi") { 
        $rand = array("Ciao", "Ehi ehi", "che noia", "ciao di nuovo", "Tutto bene?", NULL, "da quanto tempoo", "Qualcuno ha degli sticker veramente ignoranti ?", "Noia. Cosa posso fare?", "Fa troppo caldo :(", "Mi nutro di casi umani a colazione", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
