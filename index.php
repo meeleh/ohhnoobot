@@ -226,7 +226,7 @@ Else
 
 
        elseif($text == "ok" or $text == "no" or $text == "si") {
-	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppp", "quindi", NULL, NULL);
+	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        
