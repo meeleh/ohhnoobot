@@ -241,7 +241,7 @@ Else
      
         
        elseif ((stripos($text, ":(") !== false) or (stripos($text, ":c") !== false)) 
-         { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", NULL, NULL);
+         { $rand = array("Dai, ti abbraccio", "Quando sei triste lo sono anche io... ", "dai, sorridi per me", "che succede?", "voglio vederti solo sorridere, capito?", "Non piangere però", NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
  
