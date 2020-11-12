@@ -157,7 +157,7 @@ if(array_key_exists("text", $msg)){
        
            elseif (stripos($text, "anime") !== false)
            { $rand = array("che schifo", "Il mio anime preferito è Evangelion", "roba da sfigati");
-           $out = sm($chatID, ($rand[array_rand($rand)]), NULL); } 
+           $out = sm($chatID, ($rand[araray_rand($rand)]), NULL); } 
           
            elseif (stripos($text, "musica") !== false)
            { $rand = array("ascolto musica bella", "Mi mancano i concertii", "hahaha boh");
@@ -176,7 +176,7 @@ if(array_key_exists("text", $msg)){
 
          
       else 
-           { $rand = array("hahahaha", "lasciami stare", "beh", "mh", "non credo", "ok e quindi?", "*ignora quello che dice e gli dà un bacio*", "Cosa vuoi da me", "come", "Capisco", "taci e baciami", "oddio", "dici?", "ma boh", "assurdo" );
+           { $rand = array("hahahaha", "lasciami stare", "beh", "mh", "non credo", "ok e quindi?", "*ignora quello che dice e gli dà un bacio*", "Cosa vuoi da me", "come", "Capisco", "taci e baciami", "oddio", "dici?", "ma boh", "assurdo", "*smack*");
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
 }
