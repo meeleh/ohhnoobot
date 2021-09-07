@@ -190,7 +190,7 @@ Else
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
 	elseif (stripos($text, "calcio") !== false){
-	$out = sm($chatID, "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", "vietato parlare di calcio", NULL, NULL, NULL, NULL, NULL); }
+	$out = sm($chatID, "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL); }
 
         elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
