@@ -189,8 +189,8 @@ Else
       if (stripos($text, "sete") !== false) {
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
-	elseif (stripos($text, "fame") !== false){
-	$out = sm($chatID, "*offre un biscotto*", NULL); }
+	elseif (stripos($text, "calcio") !== false){
+	$out = sm($chatID, "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL, NULL); }
 
         elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
@@ -198,19 +198,13 @@ Else
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        elseif (stripos($text, "dimmi") !== false)
-          { $rand = array("shhhh", "zitto", "zitta", "nudo", "nuda", "sesso nudo", "Mi nutro di casi umani a colazione", NULL, NULL, NULL, NULL);
+          { $rand = array("shhhh", "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
-     
-       
-        elseif (stripos($text, "fake") !== false)
-          { $rand = array("foto o fake", "audio o fake", "se è fake non va bene", "odio i fake", "cosa dovrebbe dimostrare un audio, sei fake per quello che dici non perchè non esisti nel mondo empirico", NULL, NULL, NULL, NULL);
-          $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
-
 
 
         elseif (stripos($text, "tette") !== false)
-          { $rand = array("Ho le tettone", "mmm a chi le esco?", "puoi anche essere donna ma se non hai le tettone sei solo un mostro deforme che non deve assolutamente parlare.", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Le tette non c'entrano sempre" , NULL, NULL, NULL, NULL);
+          { $rand = array("Ho le tettone", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Sono brutta" , NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
@@ -226,7 +220,7 @@ Else
 
 
        elseif($text == "ok" or $text == "no" or $text == "si") {
-	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", NULL, NULL);
+	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        
