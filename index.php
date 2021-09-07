@@ -198,13 +198,13 @@ Else
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        elseif (stripos($text, "dimmi") !== false)
-          { $rand = array("shhhh", "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", NULL, NULL, NULL, NULL);
+          { $rand = array("shhhh", "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", "Qualcuno mi scopi", "odio i maschi", "potevo nascere lesbica", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
         elseif (stripos($text, "tette") !== false)
-          { $rand = array("Ho le tettone", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Sono brutta" , "Qualcuno mi scopi" NULL, NULL, NULL, NULL);
+          { $rand = array("Ho le tettone ma non è abbastanza", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Sono brutta" , "Qualcuno mi scopi", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
@@ -220,7 +220,7 @@ Else
 
 
        elseif($text == "ok" or $text == "no" or $text == "si") {
-	$rand = array("sono porca", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL);
+	$rand = array("sono porca", "Qualcuno mi scopi", "voglio solo scopare", "maschi idioti", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        
