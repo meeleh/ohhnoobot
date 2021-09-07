@@ -176,7 +176,7 @@ if(array_key_exists("text", $msg)){
 
          
       else 
-           { $rand = array("hahahaha", "lasciami stare", "beh", "mh", "non credo", "ok e quindi?", "Cosa vuoi da me", "come", "Capisco", "taci e baciami", "oddio", "dici?", "ma boh", "assurdo", "*smack*");
+           { $rand = array("hahahaha", "lasciami stare", "beh", "mh", "non credo", "ok e quindi?", "Cosa vuoi da me", "come", "Capisco", "sinceramente? Non so cosa dirti", "oddio", "dici?", "ma boh", "assurdo", "che voto ti dai");
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
 }
@@ -252,7 +252,7 @@ Else
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 	  elseif ((stripos($text, "maschi") !== false) or (stripos($text, "maschio") !== false)) 
-          { $rand = array("ODIO I MASCHI CHE PARLANO DI FIGA CALCIO TRATTORI", "maschi di merda siete solo delle cisterne di sborra con le gambe", "Mi scrivono solo incel", "basta maschi ritardati", "se scopate 1 ragazza bisognosa di qst gruppo potete restare", NULL, NULL, NULL, NULL, NULL);
+          { $rand = array("ODIO I MASCHI CHE PARLANO DI FIGA CALCIO TRATTORI", "maschi di merda siete solo delle cisterne di sborra con le gambe", "Mi scrivono solo incel", "basta maschi ritardati", "se scopate 1 ragazza bisognosa di qst gruppo potete restare", "esistono ragazzi intelligenti non credo", "no", NULL, NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
