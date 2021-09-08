@@ -190,7 +190,7 @@ Else
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
 	elseif (stripos($text, "calcio") !== false){
-	$out = sm($chatID,"non esco con i MASCHI","🙄", NULL, NULL, "maschi stupidi vi levate", "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL); }
+	$out = sm($chatID,"non esco con i MASCHI","🙄",  "maschi stupidi vi levate", "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL, NULL, NULL); }
 
         elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
@@ -220,7 +220,7 @@ Else
 
 
        elseif($text == "ok" or $text == "no" or $text == "si") {
-	$rand = array("sono porca","amo il cazzo odio i maschi","🙄", NULL, NULL, "Qualcuno mi scopi", "io so buona so fatta così me faccio prenne pe il culo e ce sto malissimo ma feriscimi e sei morto", "voglio solo scopare", "maschi idioti", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL);
+	$rand = array("sono porca","amo il cazzo odio i maschi","🙄",  "Qualcuno mi scopi", "io so buona so fatta così me faccio prenne pe il culo e ce sto malissimo ma feriscimi e sei morto", "voglio solo scopare", "maschi idioti", "Si", "va bene", "no" , "okok", "state zitti per favore", "parlate troppo", "quindi", "ma dai", "non direi", "Chi usa altre gif di calcio è pregato di uscire o provvederemo alle dovute sanzioni", NULL, NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        
@@ -247,7 +247,7 @@ Else
 
 
      elseif ((stripos($text, "sesso") !== false) or (stripos($text, "scopare") !== false)) 
-         { $rand = array("Non scopo","mi manca il mio ex","amo il cazzo odio i maschi","🙄", NULL, "ho le gambe pelose ma chi ha voglia di depilarsi", "solo le femmine sono autorizzate a mandare immagini o gif", "se avete Tiktok uscite dal gruppo", "non esco con i MASCHI","Voglio fare sesso", "Sesso?", "ancora", "si oh", "voglio solo sesso", "Da quanto non scopo","VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  NULL, NULL, NULL, NULL);
+         { $rand = array("Non scopo","mi manca il mio ex","amo il cazzo odio i maschi","🙄",  "ho le gambe pelose ma chi ha voglia di depilarsi", "solo le femmine sono autorizzate a mandare immagini o gif", "se avete Tiktok uscite dal gruppo", "non esco con i MASCHI","Voglio fare sesso", "Sesso?", "ancora", "si oh", "voglio solo sesso", "Da quanto non scopo","VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia", NULL, NULL, NULL, NULL, NULL);
           
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
