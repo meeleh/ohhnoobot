@@ -190,7 +190,7 @@ Else
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
 	elseif (stripos($text, "calcio") !== false){
-	$out = sm($chatID,"non esco con i MASCHI","🙄", "maschi stupidi vi levate" "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL); }
+	$out = sm($chatID,"non esco con i MASCHI","🙄", "maschi stupidi vi levate", "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL); }
 
         elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
@@ -252,7 +252,7 @@ Else
            $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 	  elseif ((stripos($text, "maschi") !== false) or (stripos($text, "maschio") !== false)) 
-          { $rand = array("ODIO I MASCHI CHE PARLANO DI FIGA CALCIO TRATTORI","oggi mi lavo", "🙄","maschi stupidi vi levate" "amo il cazzo odio i maschi", "non esco con i MASCHI","mi manca il mio ex","oggi mi lavo", "che noia noia", "🙄", "maschi di questo gruppo = bambini che piangono appena vengono bannati da un gruppo che non gli appartiene", "maschi di merda siete solo delle cisterne di sborra con le gambe", "Mi scrivono solo incel", "basta maschi ritardati", "se scopate 1 ragazza bisognosa di qst gruppo potete restare", "esistono ragazzi intelligenti non credo", "no", "VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia", NULL, NULL, NULL, NULL, NULL);
+          { $rand = array("ODIO I MASCHI CHE PARLANO DI FIGA CALCIO TRATTORI","oggi mi lavo", "🙄","maschi stupidi vi levate", "amo il cazzo odio i maschi", "non esco con i MASCHI","mi manca il mio ex","oggi mi lavo", "che noia noia", "🙄", "maschi di questo gruppo = bambini che piangono appena vengono bannati da un gruppo che non gli appartiene", "maschi di merda siete solo delle cisterne di sborra con le gambe", "Mi scrivono solo incel", "basta maschi ritardati", "se scopate 1 ragazza bisognosa di qst gruppo potete restare", "esistono ragazzi intelligenti non credo", "no", "VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia", NULL, NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
