@@ -198,8 +198,7 @@ Else
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
        elseif (stripos($text, "dimmi") !== false)
-          { $rand = array("shhhh","🙄", "gruppo di femmine? ed ecco che entrano i maiali",
-"se passo per un vicolo imburro le pareti", "amo il cazzo odio i maschi", "VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", "Qualcuno mi scopi", "odio i maschi", "potevo nascere lesbica", NULL, NULL, NULL, NULL);
+          { $rand = array("shhhh","🙄", "gruppo di femmine? ed ecco che entrano i maiali", "se passo per un vicolo imburro le pareti", "amo il cazzo odio i maschi", "VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", "Qualcuno mi scopi", "odio i maschi", "potevo nascere lesbica", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
@@ -226,8 +225,7 @@ Else
 
        
     elseif($text =="ciao" or $text == "ehi") { 
-       $rand = array("Ciao", "Ehi ehi","mi manca il mio ex","amo il cazzo odio i maschi", "gruppo di femmine? ed ecco che entrano i maiali",
-"se passo per un vicolo imburro le pareti","che noia","Non so com'è il sesso","🙄", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "ciao di nuovo", "Tutto bene?", NULL, "da quanto tempoo", "Sesso?", "Fa troppo caldo :(", NULL, NULL, NULL);
+       $rand = array("Ciao", "Ehi ehi","mi manca il mio ex","amo il cazzo odio i maschi", "gruppo di femmine? ed ecco che entrano i maiali","se passo per un vicolo imburro le pareti","che noia","Non so com'è il sesso","🙄", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "ciao di nuovo", "Tutto bene?", NULL, "da quanto tempoo", "Sesso?", "Fa troppo caldo :(", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
@@ -244,8 +242,7 @@ Else
  
      
       elseif ((stripos($text, "brutto") !== false) or (stripos($text, "cesso") !== false) or (stripos($text, "cessa") !== false) or (stripos($text, "incel") !== false))  { 
-       $rand = array("Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "🙄", "gruppo di femmine? ed ecco che entrano i maiali",
-"se passo per un vicolo imburro le pareti", NULL "non esco con i MASCHI", "oggi mi lavo","mi manca il mio ex", "mi guardo allo specchio: che cessa", "io so buona so fatta così me faccio prenne pe il culo e ce sto malissimo ma feriscimi e sei morto", "sono brutta anche oggi", "Chi pensa che non sia finita è solo una povera illusa" , "Chi pensa che non sia finita è solo una povera illusa", "Tutti cessi qui, pure io", "VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia", NULL, NULL, NULL);
+       $rand = array("Sei un cesso? Ok facile. Trovati i soldi e sottoponiti alla chirurgia", "🙄", "gruppo di femmine? ed ecco che entrano i maiali", "se passo per un vicolo imburro le pareti", NULL "non esco con i MASCHI", "oggi mi lavo","mi manca il mio ex", "mi guardo allo specchio: che cessa", "io so buona so fatta così me faccio prenne pe il culo e ce sto malissimo ma feriscimi e sei morto", "sono brutta anche oggi", "Chi pensa che non sia finita è solo una povera illusa" , "Chi pensa che non sia finita è solo una povera illusa", "Tutti cessi qui, pure io", "VOGLIO SCOPARE", "basta siete troppo stupidi", "che noiosi i maschi mammamia", NULL, NULL, NULL);
       $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
 
 
