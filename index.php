@@ -146,12 +146,12 @@ if(array_key_exists("text", $msg)){
        
          
           elseif (stripos($text, "?") !== false)
-          { $rand = array("Insomma", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ook", "no hahah", "certo!", "ci sono dei pro e dei contro", "cosa vuoi ottenere da queste domande vaghe?", "Ci vuole anche un po' di buon senso a volte");
+          { $rand = array("Insomma","che domanda", "mmm", "lasciami stare", "sì dai", "non mi va", "non lo dico", "ook", "no hahah", "certo!", "ci sono dei pro e dei contro", "cosa vuoi ottenere da queste domande vaghe?", "Ci vuole anche un po' di buon senso a volte");
           
              $out = sm($chatID, ($rand[array_rand($rand)]), $user_id);  }
          
       else 
-           { $rand = array("hahahaha", "lasciami stare", "beh", "mh", "non credo", "ok???", "Cosa vuoi da me", "come", "sì ok", "sinceramente? Non so cosa dirti", "oddio", "dici?", "mi stressi", "assurdo", "che voto ti dai", "da quanto non scopi", NULL);
+           { $rand = array("hahahaha","sei divertente", "mamma mia", "lasciami stare", "beh", "mh", "non credo", "ok?", "Cosa vuoi da me", "può essere", "sì ok", "sinceramente? Non so cosa dirti", "insomma", "dici?", "mi stressi", "assurdo", "ti piaccio", "mah non lo so", NULL);
             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  } 
           
 }
@@ -173,9 +173,10 @@ Else
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
        elseif (stripos($text, "dimmi") !== false)
-          { $rand = array("shhhh","🙄", "amo il cazzo odio i maschi", "VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", "Qualcuno mi scopi", "odio i maschi", "potevo nascere lesbica", NULL, NULL, NULL, NULL);
+	{ $rand = array("shhhh","🙄", "gruppo di femmine? ed ecco che entrano i maiali", "se passo per un vicolo imburro le pareti", "amo il cazzo odio i maschi", "VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "zitto", "nudo", "nuda", "Mi nutro di casi umani a colazione", "sono brutta", "Qualcuno mi scopi", "odio i maschi", "potevo nascere lesbica", NULL, NULL, NULL, NULL);
           
              $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+	
         elseif (stripos($text, "tette") !== false)
           { $rand = array("Ho le tettone ma non è abbastanza", "Le tette sono l'antistress per eccellenza", "Succhiamele", "Sono brutta" , "Qualcuno mi scopi", NULL, NULL, NULL, NULL);
           
