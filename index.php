@@ -189,9 +189,11 @@ Else
       if (stripos($text, "sete") !== false) {
 	$out = sm($chatID, "Andiamo a bere qualcosa", NULL); }
 	
-	elseif (stripos($text, "calcio") !== false){
-	$out = sm($chatID,"non esco con i MASCHI","🙄",  "maschi stupidi vi levate", "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "basta calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL, NULL, NULL); }
+	elseif (stripos($text, "calcio") !== false)
+          { $rand = array("non esco con i MASCHI","🙄", "maschi stupidi vi levate", "amo il cazzo odio i maschi", "Chi parla tramite gif e sticker è pregato di uscire o provvederemo alle dovute sanzioni","VOGLIO SCOPARE","mi manca il mio ex", "basta siete troppo stupidi", "che noiosi i maschi mammamia",  "vietato parlare di calcio", "ODIO chi parla di calciooo", "maschi tutti noiosi assurdo", NULL, NULL, NULL, NULL, NULL);
 
+             $out = sm($chatID, ($rand[array_rand($rand)]), NULL);  }
+	
         elseif (stripos($text, "latte") !== false)
           { $rand = array("chi devo allattare?", "mmm che sete", NULL , NULL, NULL, NULL);
           
